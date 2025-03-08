@@ -1,4 +1,9 @@
-Application you need to install/ CUDNN v9.6/ NVIDIA CUDA 12.6 SDK/ WINDOWS TOOLKIT SDK version 10.0.26100.0/ NODE/ OLLAMA.exe including model qwen2-math:7b you can download from the Ollama site/ OPEN CV, but it's already migrated to run with the application/ Complete folder will be uploaded to MEGAUPLOAD link soon.
+Application you need to install/ CUDNN v9.6/ 
+NVIDIA CUDA 12.6 SDK/ WINDOWS TOOLKIT SDK version 10.0.26100.0/ 
+NODE/
+OLLAMA.exe including model qwen2-math:7b you can download from the Ollama site https://ollama.com/mannix/qwen2-math-7b/ 
+OPEN CV, but it's already migrated to run with the application folder will be in MEGAUPLOAD JUST ADD IT TO THE SOURCE FOLDER/ 
+Complete folder will be uploaded to MEGAUPLOAD link soon.
 
 Project Breakdown: Armageddon2
 Overview: Armageddon2 is an advanced AI-accelerated computational framework designed for real-time CPU and GPU task optimization. It leverages CUDA, cuDNN, and AVX-optimized CPU instructions to enhance parallel computing efficiency. The framework dynamically monitors, analyzes, and predicts workload distribution between CPU and GPU, ensuring optimal resource utilization.
