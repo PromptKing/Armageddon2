@@ -18,6 +18,8 @@ OPEN CV, but it's already migrated to run with the application folder, will be i
 
 Complete folder will be uploaded to MEGAUPLOAD link soon.
 
+Once you download the Armageddon2 DLLs from MEGAUPLOADS, COPY AND PASTE IT TO YOUR SYSTEM32 FOLDER.
+
 Project Breakdown: Armageddon2
 Overview: Armageddon2 is an advanced AI-accelerated computational framework for real-time CPU and GPU task optimization. It leverages CUDA, cuDNN, and AVX-optimized CPU instructions to enhance parallel computing efficiency. The framework dynamically monitors, analyzes, and predicts workload distribution between CPU and GPU, ensuring optimal resource utilization.
 
