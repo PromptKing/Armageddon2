@@ -1,0 +1,9 @@
+namespace Amageddon2
+{
+    [default_interface]
+    runtimeclass NodeExecutor : Windows.UI.Xaml.Controls.Page
+    {
+        NodeExecutor();
+        Int32 MyProperty;
+    }
+}

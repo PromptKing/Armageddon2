@@ -1,0 +1,9 @@
+namespace Armageddon2
+{
+    [default_interface]
+    runtimeclass DataReceiver : Windows.UI.Xaml.Controls.Page
+    {
+        DataReceiver();
+        Int32 MyProperty;
+    }
+}

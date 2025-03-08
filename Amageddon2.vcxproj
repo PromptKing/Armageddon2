@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="packages\Microsoft.GDK.PC.240601.10.0.25398.4299\build\Microsoft.GDK.PC.240601.props" Condition="Exists('packages\Microsoft.GDK.PC.240601.10.0.25398.4299\build\Microsoft.GDK.PC.240601.props')" />
+  <Import Project="packages\Microsoft.Windows.CppWinRT.2.0.220531.1\build\native\Microsoft.Windows.CppWinRT.props" Condition="Exists('packages\Microsoft.Windows.CppWinRT.2.0.220531.1\build\native\Microsoft.Windows.CppWinRT.props')" />
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <CudaCompile Include="CodeInjector.cpp" />
+    <CudaCompile Include="CPUGPUDataPipeline.cpp" />
+    <CudaCompile Include="cuda_d3d12_device.cpp" />
+    <CudaCompile Include="DX.cpp" />
+    <CudaCompile Include="GPUVerifier.cpp" />
+    <CudaCompile Include="HostVerifier.cpp" />
+    <CudaCompile Include="MatrixOps.cpp" />
+    <CudaCompile Include="ObjectDetector.cpp" />
+    <CudaCompile Include="utility.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <CudaCompile Include="CodeInjector.h" />
+    <CudaCompile Include="CPUGPUDataPipeline.h" />
+    <CudaCompile Include="cuda_d3d12_interop.h" />
+    <CudaCompile Include="GPUVerifier.h" />
+    <CudaCompile Include="HostVerifier.h" />
+    <CudaCompile Include="ObjectDetector.h" />
+    <CudaCompile Include="utility.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <CudaCompile Include="kernel.cu" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="cpp.hint" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <CudaCompile Include="cuda_d3d12_interop.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AI_Integration.h">
+      <DependentUpon>AI_Integration.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClInclude>
+    <ClInclude Include="ArmageddonAlgorithm.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="ArmageddonAlgorithm2.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="CacheAutomation.h" />
+    <ClInclude Include="CaptureGameEvent.h" />
+    <ClInclude Include="CUBLASManager.h" />
+    <ClInclude Include="VRAMCacheManager.h">
+      <DependentUpon>VRAMCacheManager.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClInclude>
+    <ClInclude Include="x64\Debug\opencv\build\include\opencv2\calib3d.hpp" />
+    <ClInclude Include="x64\Debug\opencv\build\include\opencv2\core.hpp" />
+    <ClInclude Include="x64\Debug\opencv\build\include\opencv2\core\affine.hpp">
+      <DeploymentContent>true</DeploymentContent>
+    </ClInclude>
+    <ClInclude Include="x64\Debug\opencv\build\include\opencv2\core\bufferpool.hpp" />
+    <ClInclude Include="x64\Debug\opencv\build\include\opencv2\core\cuda.hpp" />
+    <ClInclude Include="x64\Debug\opencv\build\include\opencv2\core\operations.hpp" />
+    <ClInclude Include="x64\Debug\opencv\build\include\opencv2\core\optim.hpp" />
+    <ClInclude Include="x64\Debug\opencv\build\include\opencv2\core\utility.hpp" />
+    <ClInclude Include="x64\Debug\opencv\build\include\opencv2\core\utils\tls.hpp" />
+    <ClInclude Include="x64\Debug\opencv\build\include\opencv2\core\vsx_utils.hpp" />
+    <ClInclude Include="x64\Debug\opencv\build\include\opencv2\flann\allocator.h" />
+    <ClInclude Include="x64\Debug\opencv\build\include\opencv2\flann\all_indices.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
+      <DeploymentContent>true</DeploymentContent>
+    </ClInclude>
+    <ClInclude Include="x64\Debug\opencv\build\include\opencv2\flann\any.h" />
+    <ClInclude Include="x64\Debug\opencv\build\include\opencv2\flann\composite_index.h" />
+    <ClInclude Include="x64\Debug\opencv\build\include\opencv2\flann\random.h" />
+    <ClInclude Include="x64\Debug\opencv\build\include\opencv2\flann\result_set.h" />
+    <ClInclude Include="x64\Debug\opencv\build\include\opencv2\objdetect\aruco_board.hpp" />
+    <ClInclude Include="x64\Debug\opencv\build\include\opencv2\objdetect\aruco_detector.hpp" />
+    <ClInclude Include="x64\Debug\opencv\build\include\opencv2\objdetect\aruco_dictionary.hpp" />
+    <ClInclude Include="x64\Debug\opencv\build\include\opencv2\opencv.hpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="x64\Debug\opencv\build\include\opencv2\opencv_modules.hpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="x64\Debug\opencv\build\include\opencv2\stitching\detail\blenders.hpp" />
+    <ClInclude Include="x64\Debug\opencv\build\include\opencv2\stitching\detail\camera.hpp" />
+    <ClInclude Include="x64\Debug\opencv\build\include\opencv2\stitching\detail\warpers.hpp" />
+    <ClInclude Include="x64\Debug\opencv\build\include\opencv2\stitching\detail\warpers_inl.hpp" />
+    <ClInclude Include="x64\Debug\opencv\build\include\opencv2\stitching\warpers.hpp" />
+    <ClInclude Include="x64\Debug\opencv\build\include\opencv2\video\background_segm.hpp" />
+    <ClInclude Include="x64\Debug\tesseract-main\include\tesseract\unichar.h" />
+    <CudaCompile Include="CudaUtils.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
+    </CudaCompile>
+    <ClInclude Include="cuda_d3d12_device.h" />
+    <ClInclude Include="CUDA_SPY.h" />
+    <ClInclude Include="D3D12_VECTOR.h" />
+    <ClInclude Include="DataPipelineManager.h" />
+    <ClInclude Include="DataReceiver.h">
+      <DependentUpon>DataReceiver.xaml</DependentUpon>
+      <SubType>Code</SubType>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="DirectXLinker.h" />
+    <ClInclude Include="Dual Gpu Rtv Helper.h">
+      <DeploymentContent>false</DeploymentContent>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="GameInputListener.h">
+      <DependentUpon>GameInputListener.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClInclude>
+    <ClInclude Include="GPUCacheLoader.h" />
+    <ClInclude Include="GPUCacheManager.h">
+      <DependentUpon>GPUCacheManager.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClInclude>
+    <ClInclude Include="HyperCache.h" />
+    <ClInclude Include="MatrixOps.h" />
+    <ClInclude Include="MemoryBridge.h" />
+    <ClInclude Include="Metadata.h" />
+    <ClInclude Include="MotionEstimationKernel.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="NodeExecutor.h">
+      <DependentUpon>NodeExecutor.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClInclude>
+    <ClInclude Include="ObjectStructures.h" />
+    <ClInclude Include="PinnedMemory.h" />
+    <ClInclude Include="PixelDecompressor.h">
+      <DependentUpon>PixelDecompressor.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClInclude>
+    <ClInclude Include="ProcessUtils.h" />
+    <ClInclude Include="ScreenCapture.h" />
+    <ClInclude Include="Supervisor.h" />
+    <ClInclude Include="SupervisorData.h" />
+    <ClInclude Include="TextRecognition.h">
+      <DependentUpon>TextRecognition.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClInclude>
+    <ClInclude Include="ThreadMapper.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="AI_Integration.cpp">
+      <DependentUpon>AI_Integration.xaml</DependentUpon>
+      <SubType>Code</SubType>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="ArmageddonAlgorithm.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="ArmageddonAlgorithm2.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="CacheAutomation.cpp" />
+    <ClCompile Include="CUDA_SPY.cpp" />
+    <ClCompile Include="DataPipelineManager.cpp" />
+    <ClCompile Include="DataReceiver.cpp">
+      <DependentUpon>DataReceiver.xaml</DependentUpon>
+      <SubType>Code</SubType>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="DirectXLinker.cpp" />
+    <ClCompile Include="GameInputListener.cpp">
+      <DependentUpon>GameInputListener.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClCompile>
+    <ClCompile Include="GPUCacheLoader.cpp" />
+    <ClCompile Include="GPUCacheManager.cpp">
+      <DependentUpon>GPUCacheManager.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClCompile>
+    <ClCompile Include="HyperCache.cpp" />
+    <ClCompile Include="MemoryBridge.cpp" />
+    <ClCompile Include="motion_estimation_kernel.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="NodeExecutor.cpp">
+      <DependentUpon>NodeExecutor.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClCompile>
+    <ClCompile Include="PixelDecompressor.cpp">
+      <DependentUpon>PixelDecompressor.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClCompile>
+    <ClCompile Include="ScreenCapture.cpp" />
+    <ClCompile Include="SupervisorData.cpp" />
+    <ClCompile Include="TextRecognition.cpp">
+      <DependentUpon>TextRecognition.xaml</DependentUpon>
+      <SubType>Code</SubType>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="ThreadMapper.cpp" />
+    <ClCompile Include="VRAMCacheManager.cpp">
+      <DependentUpon>VRAMCacheManager.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClCompile>
+    <ClCompile Include="x64\Debug\opencv\build\include\opencv2\stitching\detail\blenders.cpp" />
+    <ClInclude Include="x64\Debug\opencv\build\include\opencv2\flann\allocator.cpp">
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</DeploymentContent>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="AI_Integration.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="DataReceiver.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="GameInputListener.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="GPUCacheManager.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="NodeExecutor.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="PixelDecompressor.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="TextRecognition.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="VRAMCacheManager.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Midl Include="AI_Integration.idl">
+      <DependentUpon>AI_Integration.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Midl>
+    <Midl Include="DataReceiver.idl">
+      <DependentUpon>DataReceiver.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Midl>
+    <Midl Include="GameInputListener.idl">
+      <DependentUpon>GameInputListener.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Midl>
+    <Midl Include="GPUCacheManager.idl">
+      <DependentUpon>GPUCacheManager.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Midl>
+    <Midl Include="NodeExecutor.idl">
+      <DependentUpon>NodeExecutor.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Midl>
+    <Midl Include="PixelDecompressor.idl">
+      <DependentUpon>PixelDecompressor.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Midl>
+    <Midl Include="TextRecognition.idl">
+      <DependentUpon>TextRecognition.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Midl>
+    <Midl Include="VRAMCacheManager.idl">
+      <DependentUpon>VRAMCacheManager.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Midl>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{845AECDF-5A0B-4FC6-9FDE-3FE0A414A798}</ProjectGuid>
+    <RootNamespace>Armageddon2</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+    <VCToolsVersion>
+    </VCToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\CUDA 12.6.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <ExecutablePath>C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.6\bin\nvcc.exe;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.6\bin;$(ExecutablePath)</ExecutablePath>
+    <IncludePath>C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.6\include;C:\Program Files\NVIDIA\CUDNN\v9.6\include\12.6\cudnn.h;C:\Users\KrunkCiti\Desktop\Armageddon2\Amageddon2\vcpkg\installed\x64-windows\include;C:\Users\KrunkCiti\Desktop\Armageddon2\Amageddon2\x64\Debug\opencv\build\include\opencv2;C:\Users\KrunkCiti\Desktop\Armageddon2\Amageddon2\x64\Debug\minhook-master\include;F:\AI\curl-master\include\curl;F:\AI\json-develop\include;C:\Users\KrunkCiti\anaconda3\pkgs\libboost-1.82.0-h3399ecb_2\Library\include\boost\compute;C:\Users\KrunkCiti\anaconda3\pkgs\libboost-1.82.0-h3399ecb_2\Library\include\boost\compute\interop;C:\Users\KrunkCiti\anaconda3\pkgs\libboost-1.82.0-h3399ecb_2\Library\include\boost\compute\interop\opencv;C:\Users\KrunkCiti\anaconda3\pkgs\libboost-1.82.0-h3399ecb_2\Library\include\boost;C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um;C:\Program Files (x86)\Windows Kits\10\Lib\10.0.26100.0\um\x64;C:\Program Files\NVIDIA\CUDNN\v9.6\include\12.6;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.6\lib\x64;C:\Program Files\NVIDIA\CUDNN\v9.6\lib\12.6\x64;C:\Program Files\NVIDIA\CUDNN\v9.6\include\12.6\cudnn.h;C:\Users\KrunkCiti\Desktop\Armageddon2\Amageddon2\vcpkg;C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um;C:\Program Files (x86)\Windows Kits\10\Lib\10.0.26100.0\um\x64;C:\Program Files\NVIDIA\CUDNN\v9.6\include\12.6;$(LibraryPath)</LibraryPath>
+    <RunCodeAnalysis>false</RunCodeAnalysis>
+    <CodeAnalysisRuleSet>CppCoreCheckArithmeticRules.ruleset</CodeAnalysisRuleSet>
+    <TargetName>Armageddon2</TargetName>
+    <CopyLocalDebugSymbols>true</CopyLocalDebugSymbols>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Custom</Optimization>
+      <PreprocessorDefinitions>WIN32;WIN64;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <EnableEnhancedInstructionSet>AdvancedVectorExtensions</EnableEnhancedInstructionSet>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <OmitFramePointers>true</OmitFramePointers>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <AdditionalIncludeDirectories>F:\AI\curl-master\include;C:\Users\KrunkCiti\Desktop\Armageddon2\Amageddon2\x64\Debug\opencv\build\include;F:\AI\tesseract-main\include;C:\Users\KrunkCiti\Desktop\Armageddon2\Amageddon2\x64\Debug\tesseract-main\include;C:\Users\KrunkCiti\Desktop\Armageddon2\Amageddon2\vcpkg\installed\x64-windows\include;C:\Users\KrunkCiti\Desktop\Armageddon2\Amageddon2\vcpkg\installed\x64-windows\include\nlohmann;C:\Users\KrunkCiti\Desktop\Armageddon2\Amageddon2\x64\Debug\opencv\build\include\opencv2;C:\Users\KrunkCiti\anaconda3\pkgs\libboost-1.82.0-h3399ecb_2\Library\include\boost\compute\interop;C:\Users\KrunkCiti\anaconda3\pkgs\libboost-1.82.0-h3399ecb_2\Library\include\boost\compute;C:\Users\KrunkCiti\anaconda3\pkgs\libboost-1.82.0-h3399ecb_2\Library\include\boost\compute\interop\opencv;C:\Users\KrunkCiti\anaconda3\pkgs\libboost-1.82.0-h3399ecb_2\Library\include\boost;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <UndefinePreprocessorDefinitions>CURL_STATICLIB</UndefinePreprocessorDefinitions>
+      <EnableParallelCodeGeneration>true</EnableParallelCodeGeneration>
+      <StructMemberAlignment>16Bytes</StructMemberAlignment>
+      <FloatingPointExceptions>false</FloatingPointExceptions>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <AdditionalDependencies>nvml.lib;opencv_world4100d.lib;cuda.lib;ws2_32.lib;wldap32.lib;crypt32.lib;libMinHook.x64.lib;cusparse.lib;Gdi32.lib;Xinput.lib;d3dcompiler.lib;D3D12.lib;User32.lib;d3d11.lib;dxgi.lib;dxguid.lib;user32.lib;gdi32.lib;cudnn_ops64_9.lib;cudnn.lib;cuFFT.lib;cuBLAS.lib;d3d12.lib;kernel32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <IgnoreSpecificDefaultLibraries>cudart_static.lib</IgnoreSpecificDefaultLibraries>
+      <GenerateWindowsMetadata>true</GenerateWindowsMetadata>
+      <AdditionalLibraryDirectories>C:\Program Files\NVIDIA\CUDNN\v9.6\lib\12.6\x64;C:\Program Files\NVIDIA\CUDNN\v9.6\include\12.6;C:\Users\KrunkCiti\Desktop\Armageddon2\Amageddon2\x64\Debug\minhook-master\build\VC17\lib\Debug;F:\AI\curl-master\lib;C:\Users\KrunkCiti\Desktop\Armageddon2\Amageddon2\x64\Debug\opencv\build\include\opencv2;C:\Users\KrunkCiti\Desktop\Armageddon2\Amageddon2\x64\Debug\opencv\build\x64\vc16\lib</AdditionalLibraryDirectories>
+    </Link>
+    <CudaCompile>
+      <TargetMachinePlatform>64</TargetMachinePlatform>
+      <Include>C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.6\include</Include>
+      <CudaRuntime>Static</CudaRuntime>
+      <CodeGeneration>compute_50,sm_50;compute_52,sm_52;compute_60,sm_60;compute_61,sm_61;compute_70,sm_70;compute_75,sm_75;compute_80,sm_80;compute_86,sm_86</CodeGeneration>
+      <FastMath>false</FastMath>
+      <GPUDebugInfo>false</GPUDebugInfo>
+    </CudaCompile>
+    <Manifest>
+      <AdditionalManifestFiles>%(AdditionalManifestFiles)</AdditionalManifestFiles>
+      <EnableDpiAwareness>true</EnableDpiAwareness>
+      <InputResourceManifests>C:\Users\KrunkCiti\Desktop\Armageddon2\Amageddon2\x64\Debug\Info.manifest</InputResourceManifests>
+    </Manifest>
+    <CudaLink>
+      <PerformDeviceLinkTimeOptimization>false</PerformDeviceLinkTimeOptimization>
+    </CudaLink>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>false</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;WIN64;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <SubSystem>Console</SubSystem>
+      <AdditionalDependencies>cudart_static.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <CudaCompile>
+      <TargetMachinePlatform>64</TargetMachinePlatform>
+    </CudaCompile>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\CUDA 12.6.targets" />
+    <Import Project="packages\Microsoft.Windows.CppWinRT.2.0.220531.1\build\native\Microsoft.Windows.CppWinRT.targets" Condition="Exists('packages\Microsoft.Windows.CppWinRT.2.0.220531.1\build\native\Microsoft.Windows.CppWinRT.targets')" />
+    <Import Project="packages\Microsoft.GameInput.0.2303.22621.3038\build\native\targets\Microsoft.GameInput.targets" Condition="Exists('packages\Microsoft.GameInput.0.2303.22621.3038\build\native\targets\Microsoft.GameInput.targets')" />
+    <Import Project="packages\Microsoft.GDK.PC.240601.10.0.25398.4299\build\Microsoft.GDK.PC.240601.targets" Condition="Exists('packages\Microsoft.GDK.PC.240601.10.0.25398.4299\build\Microsoft.GDK.PC.240601.targets')" />
+  </ImportGroup>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('packages\Microsoft.Windows.CppWinRT.2.0.220531.1\build\native\Microsoft.Windows.CppWinRT.props')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Microsoft.Windows.CppWinRT.2.0.220531.1\build\native\Microsoft.Windows.CppWinRT.props'))" />
+    <Error Condition="!Exists('packages\Microsoft.Windows.CppWinRT.2.0.220531.1\build\native\Microsoft.Windows.CppWinRT.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Microsoft.Windows.CppWinRT.2.0.220531.1\build\native\Microsoft.Windows.CppWinRT.targets'))" />
+    <Error Condition="!Exists('packages\Microsoft.GameInput.0.2303.22621.3038\build\native\targets\Microsoft.GameInput.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Microsoft.GameInput.0.2303.22621.3038\build\native\targets\Microsoft.GameInput.targets'))" />
+    <Error Condition="!Exists('packages\Microsoft.GDK.PC.240601.10.0.25398.4299\build\Microsoft.GDK.PC.240601.props')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Microsoft.GDK.PC.240601.10.0.25398.4299\build\Microsoft.GDK.PC.240601.props'))" />
+    <Error Condition="!Exists('packages\Microsoft.GDK.PC.240601.10.0.25398.4299\build\Microsoft.GDK.PC.240601.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Microsoft.GDK.PC.240601.10.0.25398.4299\build\Microsoft.GDK.PC.240601.targets'))" />
+  </Target>
+</Project>

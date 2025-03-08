@@ -1,0 +1,9 @@
+namespace Amageddon2
+{
+    [default_interface]
+    runtimeclass PixelDecompressor : Windows.UI.Xaml.Controls.Page
+    {
+        PixelDecompressor();
+        Int32 MyProperty;
+    }
+}
