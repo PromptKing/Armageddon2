@@ -16,11 +16,51 @@ Open PowerShell after download, enter command "qwen2-math-7b" without the quotes
 
 OPEN CV, but it's already migrated to run with the application folder, will be in MEGAUPLOAD, JUST ADD IT TO THE SOURCE FOLDER/ 
 
+cURL, but it's already migrated to run with the application folder, will be in MEGAUPLOAD, JUST ADD IT TO THE SOURCE FOLDER/ 
+
 Complete folder will be uploaded to MEGAUPLOAD link soon.
 
 Once you download the Armageddon2 DLLs from MEGAUPLOADS, COPY AND PASTE IT TO YOUR SYSTEM32 FOLDER.
 
-THIS IMPORTANT!!!! BEFORE TRYING TO ATTEMPT TO RUN THE PROGRAM, GO THROUGH ALL YOUR INCLUDE DIRS ETC IN PROJECT SETTINGS., ANY DIR CONTAINING THIS C:\Users\KrunkCiti\Desktop\Armageddon2\Amageddon2\vcpkg\installed\x64-windows\include FOR EXAMPLE CHANGE YOUR DESKTOP NAME AFTER \USER\
+THIS IMPORTANT!!!! BEFORE TRYING TO ATTEMPT TO RUN THE PROGRAM, ITERATE THROUGH ALL YOUR INCLUDE DIRS ETC IN PROJECT SETTINGS. ANY DIR CONTAINING THIS C:\Users\KrunkCiti\Desktop\Armageddon2\Amageddon2\vcpkg\installed\x64-windows\include FOR EXAMPLE CHANGE YOUR DESKTOP NAME AFTER \USER\
+
+/////////////////////////////////////////
+
+MAKE SURE ALL OF YOUR ENVIRONMENTS ARE SET UP....
+
+This should be in your user variable.
+
+ChocolateyLastPathUpdate=133851217185057825
+
+Path=C:\Program Files\NVIDIA\CUDNN\v9.6\bin\12.6
+
+Path=C:\Users\"YOURDESKTOPNAME"\Desktop\Armageddon2\Amageddon2\x64\Debug\opencv\build\bin
+
+Path=C:\Users\"YOURDESKTOPNAME"\Desktop\Armageddon2\Amageddon2\packages\Microsoft.Direct3D.D3D12.1.614.1\build\native\bin\x64
+
+Path=C:\Users\"YOURDESKTOPNAME"\Desktop\Armageddon2\Amageddon2\Armageddon2 DLLs\node-v22.13.1-win-x64\cli-11.1.0
+
+Path=C:\Users\"YOURDESKTOPNAME"\Desktop\Armageddon2\Amageddon2\Armageddon2 DLLs\node-v22.13.1-win-x64\cli-11.1.0\bin
+
+npm_config_prefix=C:\Users\"YOURDESKTOPNAME"\Desktop\Armageddon2\Amageddon2\Armageddon2 DLLs\node-v22.13.1-win-x64\cli-11.1.0
+
+Path=%USERPROFILE%\.dotnet\tools
+
+////////////////////////////////////////
+
+This should be in your system variables.
+
+ChocolateyInstall=C:\ProgramData\chocolatey
+
+CUDA_CUDNN_PATH=C:\Program Files\NVIDIA\CUDNN\v9.6\bin\12.6
+
+CUDA_PATH=C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.6
+
+CUDA_PATH_V12_6=C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.6
+
+
+//////////////////////////////////////
+
 
 Project Breakdown: Armageddon2
 Overview: Armageddon2 is an advanced AI-accelerated computational framework for real-time CPU and GPU task optimization. It leverages CUDA, cuDNN, and AVX-optimized CPU instructions to enhance parallel computing efficiency. The framework dynamically monitors, analyzes, and predicts workload distribution between CPU and GPU, ensuring optimal resource utilization.
