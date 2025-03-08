@@ -1,4 +1,6 @@
-Application you need to install/ CUDNN v9.6/ https://developer.download.nvidia.com/compute/cudnn/9.6.0/local_installers/cudnn_9.6.0_windows.exe
+Application you need to install/ 
+
+CUDNN v9.6/ https://developer.download.nvidia.com/compute/cudnn/9.6.0/local_installers/cudnn_9.6.0_windows.exe
 
 NVIDIA CUDA 12.6 SDK/ https://developer.download.nvidia.com/compute/cuda/12.6.3/local_installers/cuda_12.6.3_561.17_windows.exe
 
