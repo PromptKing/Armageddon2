@@ -1,6 +1,6 @@
 Application you need to install/ CUDNN v9.6/ 
 NVIDIA CUDA 12.6 SDK/ WINDOWS TOOLKIT SDK version 10.0.26100.0/ 
-NODE/
+NODE/ https://nodejs.org/dist/v22.14.0/node-v22.14.0-x64.msi
 OLLAMA.exe including model qwen2-math:7b you can download from the Ollama site https://ollama.com/mannix/qwen2-math-7b/ 
 OPEN CV, but it's already migrated to run with the application folder will be in MEGAUPLOAD JUST ADD IT TO THE SOURCE FOLDER/ 
 Complete folder will be uploaded to MEGAUPLOAD link soon.
