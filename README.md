@@ -9,7 +9,10 @@ WINDOWS TOOLKIT SDK version 10.0.26100.0/ https://go.microsoft.com/fwlink/?linki
 NODE/ https://nodejs.org/dist/v22.14.0/node-v22.14.0-x64.msi
 
 OLLAMA.exe https://ollama.com/download/OllamaSetup.exe 
-including model qwen2-math:7b you can download from the Ollama site https://ollama.com/mannix/qwen2-math-7b/ 
+
+Including model qwen2-math:7b
+
+Open PowerShell after download, enter command "qwen2-math-7b" without the quotes, the model will download.
 
 OPEN CV, but it's already migrated to run with the application folder, will be in MEGAUPLOAD, JUST ADD IT TO THE SOURCE FOLDER/ 
 
