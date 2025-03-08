@@ -1,9 +1,16 @@
 Application you need to install/ CUDNN v9.6/ https://developer.download.nvidia.com/compute/cudnn/9.6.0/local_installers/cudnn_9.6.0_windows.exe
+
 NVIDIA CUDA 12.6 SDK/ https://developer.download.nvidia.com/compute/cuda/12.6.3/local_installers/cuda_12.6.3_561.17_windows.exe
+
 WINDOWS TOOLKIT SDK version 10.0.26100.0/ https://go.microsoft.com/fwlink/?linkid=2305205
+
 NODE/ https://nodejs.org/dist/v22.14.0/node-v22.14.0-x64.msi
-OLLAMA.exe including model qwen2-math:7b you can download from the Ollama site https://ollama.com/mannix/qwen2-math-7b/ 
+
+OLLAMA.exe https://ollama.com/download/OllamaSetup.exe 
+including model qwen2-math:7b you can download from the Ollama site https://ollama.com/mannix/qwen2-math-7b/ 
+
 OPEN CV, but it's already migrated to run with the application folder, will be in MEGAUPLOAD, JUST ADD IT TO THE SOURCE FOLDER/ 
+
 Complete folder will be uploaded to MEGAUPLOAD link soon.
 
 Project Breakdown: Armageddon2
